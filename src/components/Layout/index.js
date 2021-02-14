@@ -6,7 +6,7 @@ function Layout({children}) {
       <>
         <Navbar />
         <ContentLayout>
-            {children}
+          {children}
         </ContentLayout>
       </>
   );

@@ -12,5 +12,23 @@ export const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     padding: 0px 24px;
-    color: ${({theme}) => theme.text};
+    
+    > a {
+        text-decoration: none;
+        color: ${({theme}) => theme.contrastText};
+        font-size: 1.3rem;
+        font-weight: bold;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            height: 4px;
+            background-color: ${({theme}) => theme.secondary};
+        }
+    }
 `;
