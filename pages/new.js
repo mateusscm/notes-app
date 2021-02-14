@@ -100,7 +100,6 @@ function NewNote() {
     return err;
   };
 
-  console.log(errors);
   return (
     <MainContainer>
       <h1>Create Note</h1>
